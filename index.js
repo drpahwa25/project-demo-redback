@@ -9,7 +9,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Sample endpoints
 app.get("/", (req, res) => {
-  // res.send("Hello!! World!! what a good day");
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
